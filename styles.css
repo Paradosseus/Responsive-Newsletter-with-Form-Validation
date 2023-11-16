@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: RobotoReg;
     src: url(./assets/fonts/Roboto-Regular.ttf);
@@ -73,10 +72,23 @@ label, .email-input, .submit-btn {
     display: block;
 }
 
-label {
+label, .error-container {
     font-size: 12px;
     font-weight: bold;
 }
+.error-container {
+    display: none;
+    color: #FF6155;
+}
+
+.label-container {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+}
+
+
 
 .email-input {
     width: 340px;
@@ -84,11 +96,15 @@ label {
     border-color: rgba(25, 24, 43, .25);
     stroke-opacity: 25%;
     border-radius: 5px;
-    padding: 2px 10px;
+    padding: 5px 20px;
     margin: 10px 0;
+    
 }
-.email-input:invalid {
-    border-color: #FF6155;
+
+.invalid {
+    border-color: rgba(255, 97, 85, 1);
+    color: #FF6155;
+    background-color: rgba(255, 97, 85, .15);
 }
 
 .submit-btn, .dismiss-btn {
@@ -153,11 +169,6 @@ label {
 }
 
 
-/* * {
-    border: 1px solid black;
-} */
-
-
 @media (max-width: 640px) { 
 
     .newsletter-container {
@@ -215,9 +226,6 @@ label {
     }
 }
 
-* {
-    border: 1px solid green;
-}
 
 @media(max-width:640px) {
     .confirmation-container {

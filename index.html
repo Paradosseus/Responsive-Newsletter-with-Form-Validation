@@ -28,10 +28,10 @@
         <li class="perks-item">And much more!</li>
       </ul>
   
-      <form action="" class="form-container">
-        <label for="email">Email address</label>
-        <input type="email" name="" id="" class="email-input" placeholder="email@company.com">
-        <input type="submit" class="submit-btn" value="Subscribe to monthly newsletter">
+      <form id="email-form" class="form-container" action="confirm.html" method="GET">
+        <div class="label-container"><label for="email">Email address</label> <span  class="error-container">Valid email is required</span></div>
+        <input type="email" name="email" id="userEmail" class="email-input" placeholder="email@company.com">
+        <input type="submit" class="submit-btn" value="Subscribe to monthly newsletter" formnovalidate>
       </form>
     </div>
     <div class="image-container">
@@ -43,5 +43,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Francis Joshua Collado</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
